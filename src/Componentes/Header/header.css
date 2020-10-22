@@ -1,0 +1,137 @@
+.headerInteiro{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eae5e5;
+    height:700px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.headerEsquerda{
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    
+    background-color:#c8a2c8;
+}
+.header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.header p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.header p:hover{
+    color: #4c3c4a;
+    transition: all 1.90s;
+}
+.headerDireita{
+    margin: 0;
+    padding: 5px;
+    width: 25%;
+    background-color: #c8a2c8;
+}
+.headerEsquerda h3{
+    color: #4c3c4a;
+}
+.imgEsquerda img{
+    display: block;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+    height: 649px;
+    border-top-right-radius: 5px;
+    margin-top:51px;
+}
+.imgDireita{
+    display: flex;
+    justify-content: center;
+}
+.imgDireita img{
+    object-fit: cover;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+.headerTextoDireita{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.headerTextoDireita h3{
+    color: #fff;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    margin-bottom: -10px;
+    
+}
+.headerTextoDireita p{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+.headerTxtEsquerda{
+    margin-top: -300px;
+}
+.headerTxtEsquerda h1{
+    color: #fff;
+    margin-left: 50px;
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+}
+.headerEsquerda p{
+    color: #fff;
+    margin-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: -50px;
+    font-weight: 0;
+}
+.headerEsquerda h3{
+    color: #fff;
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -50px;
+
+}
+.baixarCv{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 250px;
+    text-align: center;
+    align-items: center;
+}
+.baixarCv p{
+    font-family: 'Times New Roman', Times, serif;
+    color:#4c3c4a;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.headerContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
