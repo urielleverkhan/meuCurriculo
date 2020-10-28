@@ -20,7 +20,7 @@
     justify-content: center;
     display: flex;
 }
-.header p{
+.header a{
     color: #fff;
     font-size: 18px;
     font-weight: 600;
@@ -28,10 +28,11 @@
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     text-decoration:none;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 30px;
+    margin-bottom: -40px;
 }
-.header p:hover{
+.header a:hover{
     color: #4c3c4a;
     transition: all 1.90s;
 }
@@ -117,9 +118,13 @@
     width: 150px;
     height: 50px;
     border-radius: 5px;
+    border: 0;
     background-color: #fff;
     margin-top: 250px;
     text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .baixarCv p{
@@ -128,10 +133,31 @@
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+    
 }
 .headerContato{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: -170px;
+}
+.midias{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.midias img{
+    width: 24px;
+    height: 24px;
+    margin: 5px;
 }

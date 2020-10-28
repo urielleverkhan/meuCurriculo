@@ -1,8 +1,14 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container'
+import {HashLink as Link} from 'react-router-hash-link'
+import { Email } from '../../estilos.js'
 import './header.css';
 import ImgComputador from '../../img/notebook.jpg';
 import ImgEu from '../../img/eu.png';
+import linkedin from '../../img/linkedin32.png';
+import facebook from '../../img/facebook32.png';
+import instagran from '../../img/instagram32.png';
+import github from '../../img/github32.png';
 
 class Header extends Component{
     constructor(props){
@@ -16,10 +22,10 @@ class Header extends Component{
             <Container fluid className="headerInteiro">
                 <Container fluid className="headerEsquerda">
                     <Container fluid className="header">
-                        <p>Sobre</p>
-                        <p>Formação e experiência</p>
-                        <p>Habilidades e idiomas</p>
-                        <p>Prêmios e interesses</p>
+                        <Link smooth to="#sobre">Sobre</Link>
+                        <Link smooth to="#formacaoExp">Formação e experiência</Link>
+                        <Link smooth to="#habilidadesIdm">Habilidades e idiomas</Link>
+                        <Link smooth to="#certificadosInt">Certificados e interesses</Link>
                     </Container>
                     <Container fluid className="imgEsquerda">
                         <img src={ImgComputador} />
@@ -41,8 +47,17 @@ class Header extends Component{
                         <p>São Paulo / Sp</p>
                     </Container>
                     <Container fluid className="headerContato">
-                        
-                    <botton className="baixarCv"><p>Baixar CV</p></botton>
+                        <Container fluid className="contato">
+                            <Email href="mailto:nairadanile@gmail.com">nairadanile@gmail.com</Email>
+                            <Email href="https://wa.me/5517981008468?text=sua%20mensagem" target="_blanc">(17) 98100-8468</Email>
+                            <Container fluid className="midias">
+                                <a href="https://www.linkedin.com/in/naira-danile-magalh%C3%A3es-b3a35a33/" target="_blanc" ><img src={linkedin} /></a>
+                                <a href="https://www.facebook.com/urielleverkhan" target="_blanc" ><img src={facebook} /></a>
+                                <a href="https://www.instagram.com/urielleverkhan/?hl=pt-br" target="_blanc" ><img src={instagran} /></a>
+                                <a href="https://github.com/urielleverkhan" target="_blanc" ><img src={github} /></a>
+                            </Container>
+                        </Container>
+                        <button className="baixarCv"><p>Baixar CV</p></button>
                     </Container>
                     
                 </Container>
