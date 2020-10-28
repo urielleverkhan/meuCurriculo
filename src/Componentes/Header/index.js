@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container'
 import {HashLink as Link} from 'react-router-hash-link'
 import { Email } from '../../estilos.js'
 import './header.css';
-import ImgComputador from '../../img/notebook.jpg';
 import ImgEu from '../../img/eu.png';
 import linkedin from '../../img/linkedin32.png';
 import facebook from '../../img/facebook32.png';
@@ -27,9 +26,7 @@ class Header extends Component{
                         <Link smooth to="#habilidadesIdm">Habilidades e idiomas</Link>
                         <Link smooth to="#certificadosInt">Certificados e interesses</Link>
                     </Container>
-                    <Container fluid className="imgEsquerda">
-                        <img src={ImgComputador} />
-                    </Container>
+                    <Container fluid className="imgEsquerda" />
                     <Container fluid className="headerTxtEsquerda">
                         <p>Olá eu sou</p>
                         <h1>Naira D. Magalhães</h1>

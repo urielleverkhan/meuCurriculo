@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container'
-import Sobre from '../Sobre';
-import './home.css';
+import './sobre.css';
 
-class Home extends Component{
+class Sobre extends Component{
     constructor(props){
         super(props);
         this.state ={
@@ -13,9 +12,9 @@ class Home extends Component{
     render(){
         return(
             <Container fluid className="homeInteiro">
-                <Sobre/>
+                <h1>Sobre</h1>
             </Container>
         ); 
     }
 }
-export default Home;
+export default Sobre;
