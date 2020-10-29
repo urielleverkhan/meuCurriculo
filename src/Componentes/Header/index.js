@@ -13,9 +13,32 @@ class Header extends Component{
     constructor(props){
         super(props);
         this.state ={
-
+            hora: '00:00:00',
+            saudacao: ""
         };
     }
+    componentDidMount(){
+        setInterval(()=>{
+                this.setState({hora: new Date().toLocaleTimeString()})
+            }, 1000);
+
+        let state = this.state;
+
+        if(state.hora >= '00:00:00' && state.hora <= '11:59:59'){
+                state.saudacao = "https://wa.me/5517981008468?text=Bom%20Dia";
+            }
+        else if(state.hora >= '12:00:00' && state.hora <= '17:59:59'){
+                state.saudacao = "https://wa.me/5517981008468?text=Boa%20Tarde";
+            }
+        else if(state.hora >= '18:00:00' && state.hora <= '23:59:59'){
+                
+                    state.saudacao = "https://wa.me/5517981008468?text=Boa%20Noite";
+            }
+        this.setState(state);
+        }
+        
+    
+
     render(){
         return(
             <Container fluid className="headerInteiro">
@@ -42,11 +65,12 @@ class Header extends Component{
                         <h3>Naira D. Magalhães</h3>
                         <p>Bacharel em Engenharia da computação</p>
                         <p>São Paulo / Sp</p>
+                        
                     </Container>
                     <Container fluid className="headerContato">
                         <Container fluid className="contato">
                             <Email href="mailto:nairadanile@gmail.com">nairadanile@gmail.com</Email>
-                            <Email href="https://wa.me/5517981008468?text=sua%20mensagem" target="_blanc">(17) 98100-8468</Email>
+                            <Email href={this.state.saudacao} target="_blanc">(17) 98100-8468</Email>
                             <Container fluid className="midias">
                                 <a href="https://www.linkedin.com/in/naira-danile-magalh%C3%A3es-b3a35a33/" target="_blanc" ><img src={linkedin} /></a>
                                 <a href="https://www.facebook.com/urielleverkhan" target="_blanc" ><img src={facebook} /></a>
