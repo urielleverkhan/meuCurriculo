@@ -6,19 +6,11 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
-    /*animation: changeBackgroundColor 7s infinite;*/
 }
-/*@keyframes changeBackgroundColor {
-    0% {
-      background-color: #eae5e5;
-    }
-    
-    100% {
-      background-color: #4c3c4a;
-    }
-  }*/
+
   
 .homeInteiro h1{
     color: #4c3c4a;
 }
+
 

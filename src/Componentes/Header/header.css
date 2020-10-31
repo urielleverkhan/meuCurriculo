@@ -170,8 +170,3 @@
     margin: 5px;
 }
 
-@media only screen and (max-device-width: 1366px) {
-    .imgEsquerda {
-      /*background-attachment: scroll;*/
-    }
-  }
