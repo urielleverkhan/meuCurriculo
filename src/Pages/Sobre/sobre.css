@@ -1,3 +1,32 @@
-.titulo{
-    font-family: playfair display,serif;
+.sobreInteiro{
+    display: flex;
+    flex-direction: column;
+    background-color:#d1c4cf ;
+    width: 70%;
+    height: 370px;
+    border-radius: 10px;
+    margin: 4px 0;
+}
+
+.sobreInteiro h1{
+    color: #382e35;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    margin: 0 10px;
+}
+.sobreInteiro h3{
+    color: #382e35;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 10px 20px 10px;
+}
+
+.sobreInteiro p{
+    color: #382e35;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 3px 10px;
+    text-align: justify;
+    text-indent: 40px;
 }
