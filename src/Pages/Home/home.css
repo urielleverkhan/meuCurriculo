@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #eae5e5;
-    height:1050px;
+    height:2000px;
     justify-content: center;
     display: flex;
     flex-direction: row;
 }
+
+  
 .homeInteiro h1{
     color: #4c3c4a;
 }
+
+
