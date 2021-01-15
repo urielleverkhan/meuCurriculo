@@ -10,6 +10,3 @@ import styled from 'styled-components';
     margin-top: 5px;
  `;
 
- export const FundoMudaScroll = styled.div `
-        background-color: ${props => `#${props.corDeFundo}`};
-    `;

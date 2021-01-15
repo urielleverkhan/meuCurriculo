@@ -4,6 +4,7 @@ import Header from './Componentes/Header';
 import Footer from './Componentes/Footer';
 import Home from './Pages/Home';
 import Sobre from './Pages/Sobre';
+import FormacaoExp from './Pages/FormacaoExp';
 
 const Routes = () => {
     return(
@@ -12,6 +13,7 @@ const Routes = () => {
         <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/Sobre" component={Sobre} />
+            <Route exact path="/FormacaoEExperiencia" component={FormacaoExp} />
         </Switch>
         <Footer />
     </BrowserRouter>

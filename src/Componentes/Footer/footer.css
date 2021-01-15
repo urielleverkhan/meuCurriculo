@@ -21,8 +21,30 @@
 .imgFooter img{
     width: 32px;
     height: 32px;
-    margin: 2px 0;
+    margin-bottom: 2px;
+
+    -webkit-animation: pulaPula 1s forwards;
+    animation: pulaPula 1s forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
 }
+
+@keyframes pulaPula{
+    0%{
+        margin-bottom:2px;
+    }
+    50%{
+        margin-bottom: 12px;
+    }
+    100%{
+        margin-bottom: 2px;
+    }
+}
+
+.imgFooter img:hover{
+    animation-play-state: running!important;
+}
+
 .imgFooter{
     display: flex;
     align-items: flex-end;

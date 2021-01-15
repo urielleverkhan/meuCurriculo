@@ -44,8 +44,8 @@ class Header extends Component{
             <Container fluid className="headerInteiro" id="headerInteiro">
                 <Container fluid className="headerEsquerda">
                     <Container fluid className="header">
-                        <Link smooth to="#sobre">Sobre</Link>
-                        <Link smooth to="#formacaoExp">Formação e experiência</Link>
+                        <Link smooth to="#sobreInteiro">Sobre</Link>
+                        <Link smooth to="#formacaoExpInteiro">Formação e experiência</Link>
                         <Link smooth to="#habilidadesIdm">Habilidades e idiomas</Link>
                         <Link smooth to="#certificadosInt">Certificados e interesses</Link>
                     </Container>
