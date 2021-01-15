@@ -41,7 +41,7 @@ class Header extends Component{
 
     render(){
         return(
-            <Container fluid className="headerInteiro" id="headerInteiro">
+            <Container fluid className="headerInteiro">
                 <Container fluid className="headerEsquerda">
                     <Container fluid className="header">
                         <Link smooth to="#sobreInteiro">Sobre</Link>
