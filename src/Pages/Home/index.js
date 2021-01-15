@@ -86,7 +86,7 @@ class Home extends Component{
     render(){
         return(
             
-            <FundoMudaScroll className="homeInteiro" id="homeInteiro" corDeFundo={this.state.corFundo}>
+            <FundoMudaScroll className="homeInteiro" corDeFundo={this.state.corFundo}>
                 <Sobre/>
             </FundoMudaScroll>
         ); 

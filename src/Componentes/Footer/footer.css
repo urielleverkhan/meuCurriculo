@@ -3,63 +3,9 @@
     justify-content: center;
     align-items: center;
     background: #382e35;
-    width: 100%;
-    height: 50px;
 }
 .footerDireitos h3{
     color:#d1c4cf;
     font-size: 15px;
 
-}
-.footerContato{
-    display: flex;
-    justify-content: center;
-    background-color: #d1c4cf;
-    width: 100%;
-    height: 280px;
-}
-.imgFooter img{
-    width: 32px;
-    height: 32px;
-    margin: 2px 0;
-}
-.imgFooter{
-    display: flex;
-    align-items: flex-end;
-    width: 50px;
-}
-.footerOuvir{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-.footerOuvir h3{
-    color: #382e35;
-    font-family: 'Caveat', cursive;
-    font-size: 50px;
-    width: 250px;
-}
-.footerMidias a{
-   margin:0 10px;
-}
-.footerEmail{
-    width:30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.email{
-    margin: 100px 0 ;
-}
-.email button{
-    margin: 50px -20px 0 0;
-    background-color: #382e35;
-}
-.email button p{
-    color: #fff;
-}
-.footerEmail a {
-    color:  #382e35;
-    display: flex;
 }

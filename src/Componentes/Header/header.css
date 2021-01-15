@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #4c3c4a;
+    background-color: #eae5e5;
     height:700px;
     justify-content: center;
     display: flex;
@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     width: 75%;
-    background-color:#4c3c4a;
+    background-color:#c8a2c8;
 }
 .header{
     align-items: center;
@@ -39,7 +39,7 @@
     margin: 0;
     padding: 5px;
     width: 25%;
-    background-color: #4c3c4a;
+    background-color: #c8a2c8;
 }
 .headerEsquerda h3{
     color: #4c3c4a;
@@ -130,7 +130,11 @@
     align-items: center;
     cursor: pointer;
 }
-
+.baixarCv:hover{
+    background-color: #f6dffc;
+    color: #fff;
+    transition: all 0.50s;
+}
 .baixarCv p{
     font-family: 'Times New Roman', Times, serif;
     color:#4c3c4a;
