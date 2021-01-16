@@ -24,15 +24,19 @@ class Home extends Component{
     componentDidMount() {
 
         window.onscroll = () => {
+            //let tamanhoTela = document.body.clientHeight;
             let telaAgora = document.documentElement.scrollTop;
+            let valorFinal = telaAgora + 450;
+            console.log(valorFinal);
 
-            if(telaAgora >=300){
+
+            if(telaAgora >= 300 || valorFinal >= 450){
                 this.setState({
                     classeMove:"sobreConteudo move"
                 }); 
             }
 
-            if(telaAgora >=700){
+            if(telaAgora >=700 || valorFinal >= 820){
                 this.setState({
                     classeMoveEsquerda:"formacaoExpConteudoEsquerda moveEsquerda",
                     classeMoveDireita:"formacaoExpConteudoDireita moveDireita"
