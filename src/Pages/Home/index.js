@@ -13,7 +13,8 @@ class Home extends Component{
         this.state ={
             classeMove: "sobreConteudo",
             classeMoveEsquerda: "formacaoExpConteudoEsquerda",
-            classeMoveDireita: "formacaoExpConteudoDireita"
+            classeMoveDireita: "formacaoExpConteudoDireita",
+            classeAparecer: "FormacaoExpConteudo"
 
         };
    
@@ -39,7 +40,8 @@ class Home extends Component{
             if(telaAgora >=700 || valorFinal >= 820){
                 this.setState({
                     classeMoveEsquerda:"formacaoExpConteudoEsquerda moveEsquerda",
-                    classeMoveDireita:"formacaoExpConteudoDireita moveDireita"
+                    classeMoveDireita:"formacaoExpConteudoDireita moveDireita",
+                    classeAparecer:"FormacaoExpConteudo aparecer"
                 }); 
             }
         }
@@ -54,7 +56,7 @@ class Home extends Component{
             
             <Container>
                 <Sobre propsClass={this.state.classeMove} />
-                <FormacaoExp propsClassEsquerda={this.state.classeMoveEsquerda} propsClassDireita={this.state.classeMoveDireita}/>
+                <FormacaoExp propsClassEsquerda={this.state.classeMoveEsquerda} propsClassDireita={this.state.classeMoveDireita} propsAparecer={this.state.classeAparecer} />
             </Container>
         ); 
     }

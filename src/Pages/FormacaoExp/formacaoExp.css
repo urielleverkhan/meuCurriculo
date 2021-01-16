@@ -13,6 +13,7 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    height: 350px;
 }
 
 .formacaoExpConteudoEsquerda{
@@ -21,9 +22,9 @@
     margin-right: 1000px;
 
     -webkit-animation: moveEsquerda 1s forwards;
-    -webkit-animation-delay:1s;
+    -webkit-animation-delay:0.5s;
     animation: moveEsquerda 1s forwards;
-    animation-delay: 0;
+    animation-delay: 0.5s;
     animation-play-state: paused;
 }
 
@@ -33,9 +34,9 @@
     margin-left: 1000px;
 
     -webkit-animation: moveDireita 1s forwards;
-    -webkit-animation-delay:1s;
+    -webkit-animation-delay:0.5s;
     animation: moveDireita 1s forwards;
-    animation-delay: 0;
+    animation-delay: 0.5s;
     animation-play-state: paused;
 }
 
@@ -63,16 +64,18 @@
     animation-play-state: running!important;
 }
 
-.formacaoExpConteudoEsquerda h1, .formacaoExpConteudoDireita h1 {
+.h1FormacaoExpConteudo{
     font-family: playfair display,serif;
     font-size: 32px;
     font-style: italic;
     color: #4c3c4a;
     margin-bottom: 0;
     padding-bottom: 0;
+
+    
 }
 
-.formacaoExpConteudoEsquerda h3, .formacaoExpConteudoDireita h3{
+.h3FormacaoExpConteudo{
     font-family: Arial,Helvetica,sans-serif;
     font-size: 16px;
     color: #4c3c4a;
@@ -81,20 +84,41 @@
     font-weight: 1;
 }
 
-.formacaoExpConteudoEsquerda h4, .formacaoExpConteudoDireita h4{
+.h4FormacaoExpConteudo{
     font-family: Arial,Helvetica,sans-serif;
     font-size: 16px;
     color: black;
 }
 
 
-.formacaoExpConteudoEsquerda p, .formacaoExpConteudoDireita p{
+.pFormacaoExpConteudo{
     font-family: Arial,Helvetica,sans-serif;
     font-size: 16px;
     color: black;
     margin-top:0;
     padding-top:0;
     font-weight: 1;
+}
+
+.aparecerRum{
+    animation-play-state: paused;
+}
+
+@keyframes apareceRoxo{
+    0%{
+        color:#fff;
+    }
+    100%{
+        color:#4c3c4a;
+    }
+}
+@keyframes aparecePreto{
+    0%{
+        color:#fff;
+    }
+    100%{
+        color:#000;
+    }
 }
 
 @media (max-width: 1370px){
@@ -106,10 +130,63 @@
 }
     
 @media (max-width: 870px){
+    .moveEsquerda{
+        animation-play-state: paused!important;
+    }
+    .moveDireita{
+        animation-play-state: paused!important;
+    }
+    .formacaoExpConteudoEsquerda{
+        margin-right: 20px!important;
+    }
+    .formacaoExpConteudoDireita{
+        margin-left: 20px!important;
+    }
+    .h1FormacaoExpConteudo{
+        color: #fff;  
+        -webkit-animation: apareceRoxo 2s forwards;
+        -webkit-animation-delay:1s;
+        animation: apareceRoxo 2s forwards;
+        animation-delay: 1s;
+        animation-play-state: paused;
+       
+    }
+    
+    .h3FormacaoExpConteudo{ 
+        color: #fff;
+        -webkit-animation: apareceRoxo 2s forwards;
+        -webkit-animation-delay:1s;
+        animation: apareceRoxo 2s forwards;
+        animation-delay: 1s;
+        animation-play-state: paused;
+    }
+    
+    .h4FormacaoExpConteudo{
+        color: white;
+        -webkit-animation: aparecePreto 2s forwards;
+        -webkit-animation-delay:1s;
+        animation: aparecePreto 2s forwards;
+        animation-delay: 1s;
+        animation-play-state: paused;
+    }
+    
+    
+    .pFormacaoExpConteudo{
+        color: white;
+        -webkit-animation: aparecePreto 2s forwards;
+        -webkit-animation-delay:1s;
+        animation: aparecePreto 2s forwards;
+        animation-delay: 1s;
+        animation-play-state: paused;
         
+    }
+
+    .aparecer{
+        animation-play-state: running!important;
+    }
 }
    
-@media (max-width: 786px){
+@media (max-width: 790px){
     
 }
 

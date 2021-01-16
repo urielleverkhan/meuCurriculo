@@ -23,7 +23,7 @@
     -webkit-animation: moveDaEsquerdaParaDireita 1s forwards;
     -webkit-animation-delay:1s;
     animation: moveDaEsquerdaParaDireita 1s forwards;
-    animation-delay: 0;
+    animation-delay: 1s;
     animation-play-state: paused;
    
 }
