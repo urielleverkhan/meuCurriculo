@@ -95,7 +95,17 @@
 }
     
 @media (max-width: 870px){
-        
+    .footerEmail{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .email{
+       margin-right: -100px;
+    }
+    .imgFooter img{
+        padding-left: 150px;
+    }
+    
 }
    
 @media (max-width: 786px){
@@ -113,6 +123,7 @@
         width: 90%;
         margin:0;
         padding: 0;
+        justify-content: center;
     }
     .footerOuvir{
         width: 90%;
@@ -140,9 +151,13 @@
         padding-left: 200px;
         margin-bottom: -30px;
     }
+   
 }
 
 @media (max-width: 719px){
+    
+}
+@media (max-width: 669px){
     
 }
 @media (max-width: 657px){

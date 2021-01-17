@@ -130,6 +130,9 @@
 }
     
 @media (max-width: 870px){
+    .formacaoExpInteiro{
+        margin-left: 2px;
+    }
     .moveEsquerda{
         animation-play-state: paused!important;
     }
@@ -197,6 +200,7 @@
 @media (max-width: 719px){
     .formacaoExpRow{
         height: 400px;
+        margin-left: 30px;
     }
 }
 @media (max-width: 657px){

@@ -38,8 +38,8 @@ class Footer extends Component{
                             
                         </Container>
                         <Container fluid className="imgFooter">
-                        <Link smooth to="#headerInteiro"><img src={flecha} alt="Voltar ao topo"/></Link>
-                    </Container>
+                            <Link smooth to="#headerInteiro"><img src={flecha} alt="Voltar ao topo"/></Link>
+                        </Container>
                    </Container>
                    
                 </Container>
