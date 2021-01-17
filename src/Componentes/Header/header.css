@@ -204,10 +204,10 @@
 
 @media (max-width: 767px){
     .header a {
-        font-size: 10px;
+        font-size: 8px;
     }
     .header a:hover{
-        font-size: 13px;
+        font-size: 12px;
       
     }
     .headerInteiro{
