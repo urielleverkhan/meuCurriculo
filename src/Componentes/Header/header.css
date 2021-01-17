@@ -204,12 +204,14 @@
 
 @media (max-width: 767px){
     .header a {
-        font-size: 8px;
+        font-size: 12px;
+        margin-left: 10px;
     }
     .header a:hover{
-        font-size: 12px;
+        font-size: 15px;
       
     }
+    
     .headerInteiro{
        height: 600px;
     }
@@ -237,10 +239,10 @@
 }
 @media (max-width: 669px){
     .header a {
-        font-size: 8px;
+        font-size: 12px;
     }
     .header a:hover{
-        font-size: 12px;
+        font-size: 15px;
       
     }
     .contato a{
