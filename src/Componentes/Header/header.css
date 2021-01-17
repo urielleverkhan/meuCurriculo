@@ -202,11 +202,38 @@
 }
 
 @media (max-width: 767px){
-    
+    .headerInteiro{
+       height: 600px;
+    }
+    .imgDireita img{
+        
+        width: 150px;
+        height: 150px;
+    }
+    .headerTextoDireita h3{
+        font-size: 20px;
+    }
+    .headerTextoDireita p{
+        font-size: 15px;
+    }
+    .headerTxtEsquerda h1{
+        font-size: 60px;
+    }
+    .headerTxtEsquerda h3{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 719px){
     
+}
+@media (max-width: 669px){
+    .header a {
+        font-size: 10px;
+    }
+    .contato a{
+        font-size: 15px;
+    }
 }
 @media (max-width: 657px){
     

@@ -195,7 +195,9 @@
 }
 
 @media (max-width: 719px){
-    
+    .formacaoExpRow{
+        height: 400px;
+    }
 }
 @media (max-width: 657px){
     

@@ -80,11 +80,15 @@
 }
 
 @media (max-width: 767px){
-    
+    .sobreInteiro{
+        height: 600px;
+    }
 }
 
 @media (max-width: 719px){
-    
+    .sobreInteiro{
+        height: 650px;
+    }
 }
 @media (max-width: 657px){
     

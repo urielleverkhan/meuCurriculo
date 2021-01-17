@@ -35,11 +35,13 @@ class Footer extends Component{
                             <Email href={this.state.saudacao} target="_blanc">(17) 98100-8468</Email>
 
                             <button className="baixarCv"><p>Baixar CV</p></button>
+                            
                         </Container>
-                   </Container>
-                   <Container fluid className="imgFooter">
+                        <Container fluid className="imgFooter">
                         <Link smooth to="#headerInteiro"><img src={flecha} alt="Voltar ao topo"/></Link>
                     </Container>
+                   </Container>
+                   
                 </Container>
 
                 <Container fluid className="footerDireitos">
