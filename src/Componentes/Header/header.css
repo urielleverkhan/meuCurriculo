@@ -204,11 +204,11 @@
 
 @media (max-width: 767px){
     .header a {
-        font-size: 12px;
+        font-size: 10px;
         margin-left: 10px;
     }
     .header a:hover{
-        font-size: 15px;
+        font-size: 13px;
       
     }
     
@@ -239,10 +239,10 @@
 }
 @media (max-width: 669px){
     .header a {
-        font-size: 12px;
+        font-size: 10px;
     }
     .header a:hover{
-        font-size: 15px;
+        font-size: 13px;
       
     }
     .contato a{
