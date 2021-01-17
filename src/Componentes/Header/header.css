@@ -7,6 +7,7 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
+    overflow-x: hidden;
 }
 .headerEsquerda{
     margin: 0;

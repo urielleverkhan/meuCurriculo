@@ -18,7 +18,7 @@ class Footer extends Component{
     }
     render(){
         return(
-            <Container fluid>
+            <Container fluid className="footerInteiro">
                 <Container fluid className="footerContato">
                     <Container fluid className="footerOuvir">
                         <h3>Adoraria ouvir de você</h3>
