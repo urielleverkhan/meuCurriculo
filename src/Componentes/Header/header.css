@@ -264,32 +264,54 @@
     }
     .headerDireita{
         margin-top: 20px;
-
+        width: 100%;
     }
     .contato{
         margin-top: 20px;
     }
     .headerContato{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
 }
 @media (max-width: 669px){
-   
+    .headerInteiro{
+        height: 1160px;
+        
+    }
+    .headerContato{
+        margin-bottom: 20px;
+    }
     
 }
 @media (max-width: 657px){
-    
+    .headerTxtEsquerda h1, .headerTxtEsquerda h3{
+        margin-left: 10px;
+    }
+    .headerTxtEsquerda p{
+        margin-left: 30px;
+    }
 }
 @media (max-width: 540px){
     .header a {
-        font-size: 8px;
-        margin-left: 10px;
+        font-size: 12px;
     }
     .header a:hover{
-        font-size: 13px;
+        font-size: 14px;
       
     }
+    .headerTxtEsquerda h1{
+        font-size: 50px;
+    }
+    .headerTxtEsquerda h3 {
+        font-size: 18px;
+        margin-top: -40px
+    }
+    .headerTxtEsquerda p{
+        font-size: 20px;
+        margin-bottom: -40px;
+    }
+    
 }
 
 @media (max-width: 490px){
