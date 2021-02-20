@@ -275,16 +275,8 @@
     
 }
 @media (max-width: 669px){
-    .header a {
-        font-size: 10px;
-    }
-    .header a:hover{
-        font-size: 13px;
-      
-    }
-    .contato a{
-        font-size: 15px;
-    }
+   
+    
 }
 @media (max-width: 657px){
     
