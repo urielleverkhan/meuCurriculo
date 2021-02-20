@@ -234,7 +234,44 @@
     }
 }
 
-@media (max-width: 719px){
+@media (max-width: 705px){
+    .headerInteiro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1160px;
+        overflow: hidden;
+    }
+    .headerEsquerda{
+        width: 100%;
+        margin-top: -160px;
+    }
+    .header{
+        margin-top: 160px;
+    }
+    .header a{
+        font-size: 14px;
+    }
+    .header a:hover{
+        font-size: 18px;
+    }
+    .imgEsquerda{
+        margin-top: 40px;
+        
+    }
+    .headerTxtEsquerda{
+        margin-top: -160px;
+    }
+    .headerDireita{
+        margin-top: 20px;
+
+    }
+    .contato{
+        margin-top: 20px;
+    }
+    .headerContato{
+        margin-bottom: 10px;
+    }
     
 }
 @media (max-width: 669px){
