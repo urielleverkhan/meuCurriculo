@@ -31,6 +31,28 @@
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
+.baixarCvFooter{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #fff;
+    margin-top: 250px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.baixarCvFooter p{
+    font-family: 'Times New Roman', Times, serif;
+    color:#4c3c4a;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;   
+}
 
 @keyframes pulaPula{
     0%{
@@ -164,7 +186,17 @@
     
 }
 @media (max-width: 657px){
+    .imgFooter{
+        margin-left: -100px!important;
+       
+    }
+    .email{
+        margin-left: -100px;
+    }
     
+    .baixarCvFooter{
+        margin-left: 65px!important;
+    }
 }
 @media (max-width: 540px){
     
@@ -176,9 +208,31 @@
 }
 
 @media (max-width: 457px){
+    .footerContato{
+        height: 100%;
+    }
     
+    .email{
+        margin-left: -150px;
+        margin-bottom: 20px;
+    }
     
-    
+    .footerOuvir h3{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .footerMidias{
+        margin-bottom: 10px;
+    }
+
+    .imgFooter{
+        margin-left: -150px!important;
+       
+    }
+    .footerDireitos h3{
+        font-size: 12px;
+    }
+   
 }
 
 @media (max-width: 410px){
