@@ -225,32 +225,32 @@
 } */
 
 .hamburguerRoda1{
-    animation: rotate45 2s;
+    animation: rotate45 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .hamburguerRoda2{
-    animation: sumir 2s;
+    animation: sumir 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .harburguerRoda3{
-    animation: rotate135 2s;
+    animation: rotate135 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;  
 }
 .hamburguerVolta1{
-    animation: rotate45Voltar 2s;
+    animation: rotate45Voltar 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .hamburguerVolta2{
-    animation: sumirVoltar 2s;
+    animation: sumirVoltar 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .hamburguerVolta3{
-    animation: rotate135Voltar 2s;
+    animation: rotate135Voltar 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;  
 }
@@ -487,17 +487,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 1130px;
+        height: 930px;
         overflow: hidden;
     }
     .baixarCv{
         margin-left: 0!important;
     }
-    .headerInteiro{
-        
-        height: 1160px;
-        overflow: hidden;
-    }
+    
     .headerEsquerda{
         margin-top: 0;
     }
@@ -510,11 +506,11 @@
         display:flex;
         margin-top:-8px;
         justify-content: flex-end;
-        height: 12px;
+        height: 20px;
         
     }
     .imgEsquerda{
-       
+       height:400px;
     }
     .headerHamburger{
         flex-direction: column;
@@ -527,15 +523,15 @@
         background-color:#4c3c4a;
         display: flex;
         height: 0;
-        transition: 2s;
+        transition: 1s;
     }
     .hamburguerAberto{
         height: 100px;
-        transition: 2s;
+        transition: 1s;
     }
     .headerHamburger a{
         height: 0;
-        transition: 2s;
+        transition: 1s;
         color:transparent;
         font-size: 15px;
         font-weight: 1;
@@ -554,7 +550,7 @@
         font-family: 'Times New Roman', Times, serif;
         text-decoration:none;
         height: 25px;
-        transition: 2s;
+        transition: 1s;
     }
     .headerHamburger a:hover{
         font-size: 20px;
@@ -585,7 +581,17 @@
     }
 }
 @media (max-width: 365px){
-    
+    .headerTxtEsquerda h1{
+        font-size: 35px;
+    }
+    .headerTxtEsquerda h3 {
+        font-size: 15px;
+        margin-top: -30px
+    }
+    .headerTxtEsquerda p{
+        font-size: 18px;
+        margin-bottom: -30px;
+    }
 }
 @media (max-width: 296px){
 
