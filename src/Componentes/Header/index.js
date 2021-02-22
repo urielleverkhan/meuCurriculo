@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container'
 import {HashLink as Link} from 'react-router-hash-link'
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import { Email } from '../../estilos.js'
 import './header.css';
 import ImgEu from '../../img/eu.png';
@@ -9,13 +12,38 @@ import facebook from '../../img/facebook32.png';
 import instagran from '../../img/instagram32.png';
 import github from '../../img/github32.png';
 
+        
+
 class Header extends Component{
     constructor(props){
         super(props);
         this.state ={
             hora: '00:00:00',
-            saudacao: ""
+            saudacao: "",
+            classAbrirHamburguer: "headerHamburger",
+            estado: 0,
+            linha1: "",
+            linha2: "",
+            linha3: ""
         };
+        this.abrirHamburger = this.abrirHamburger.bind(this);
+    }
+    abrirHamburger(){
+        if(this.state.estado == 0){
+            this.setState({classAbrirHamburguer: "headerHamburger hamburguerAberto"});
+            this.setState({linha1: "hamburguerRoda1"});
+            this.setState({linha2: "hamburguerRoda2"});
+            this.setState({linha3: "harburguerRoda3"});
+            
+            this.setState({estado:1});
+        }
+        else if(this.state.estado ==1){
+            this.setState({classAbrirHamburguer: "headerHamburger"})
+            this.setState({linha1: "hamburguerVolta1"});
+            this.setState({linha2: "hamburguerVolta2"});
+            this.setState({linha3: "hamburguerVolta3"});
+            this.setState({estado:0})
+        }
     }
     componentDidMount(){
         setInterval(()=>{
@@ -37,9 +65,11 @@ class Header extends Component{
         this.setState(state);
         }
         
-    
+        
 
     render(){
+    
+        
         return(
             <Container fluid className="headerInteiro" id="headerInteiro">
                 <Container fluid className="headerEsquerda">
@@ -49,6 +79,20 @@ class Header extends Component{
                         <Link smooth to="#habilidadesIdm">Habilidades e idiomas</Link>
                         <Link smooth to="#certificadosInt">Certificados e interesses</Link>
                     </Container>
+                    <Container fluid className="header480px" onClick={this.abrirHamburger} on >
+                        <button className="hamburguer" >
+                            <span className={this.state.linha1} id="linha1"/>
+                            <span className={this.state.linha2} id="linha2"/>
+                            <span className={this.state.linha3} id="linha3"/>
+                        </button>
+                    </Container>
+                    <Container fluid className={this.state.classAbrirHamburguer}>
+                        <Link smooth to="#sobreInteiro">Sobre</Link>
+                        <Link smooth to="#formacaoExpInteiro">Formação e experiência</Link>
+                        <Link smooth to="#habilidadesIdm">Habilidades e idiomas</Link>
+                        <Link smooth to="#certificadosInt">Certificados e interesses</Link>
+                    </Container>
+                    
                     <Container fluid className="imgEsquerda" />
                     <Container fluid className="headerTxtEsquerda">
                         <p>Olá eu sou</p>
