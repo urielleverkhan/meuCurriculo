@@ -15,23 +15,3 @@
     border-radius: 5px;
     background-color: #382e35;
 }
-/* .linhaGrossa{
-    width: 0;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #382e35;
-    margin-top: -3px;
-    float:left;
-} */
-.linhaGrossaGrande{
-    animation-play-state: running;
-}
-
-@keyframes subirLinha{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 90%;
-    }
-}

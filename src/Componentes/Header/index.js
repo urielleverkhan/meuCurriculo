@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container'
 import {HashLink as Link} from 'react-router-hash-link'
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
 import { Email } from '../../estilos.js'
 import './header.css';
 import ImgEu from '../../img/eu.png';
@@ -19,7 +16,7 @@ class Header extends Component{
         super(props);
         this.state ={
             hora: '00:00:00',
-            saudacao: "",
+            saudacao: "nada",
             classAbrirHamburguer: "headerHamburger",
             estado: 0,
             linha1: "",
@@ -27,6 +24,7 @@ class Header extends Component{
             linha3: ""
         };
         this.abrirHamburger = this.abrirHamburger.bind(this);
+     
     }
     abrirHamburger(){
         if(this.state.estado == 0){
@@ -38,33 +36,27 @@ class Header extends Component{
             this.setState({estado:1});
         }
         else if(this.state.estado ==1){
-            this.setState({classAbrirHamburguer: "headerHamburger"})
+            this.setState({classAbrirHamburguer: "headerHamburger"});
             this.setState({linha1: "hamburguerVolta1"});
             this.setState({linha2: "hamburguerVolta2"});
             this.setState({linha3: "hamburguerVolta3"});
-            this.setState({estado:0})
+            this.setState({estado:0});
         }
     }
-    componentDidMount(){
-        setInterval(()=>{
-                this.setState({hora: new Date().toLocaleTimeString()})
-            }, 1000);
-
-        let state = this.state;
-
-        if(state.hora >= '00:00:00' && state.hora <= '11:59:59'){
-                state.saudacao = "https://wa.me/5517981008468?text=Bom%20Dia";
-            }
-        else if(state.hora >= '12:00:00' && state.hora <= '17:59:59'){
-                state.saudacao = "https://wa.me/5517981008468?text=Boa%20Tarde";
-            }
-        else if(state.hora >= '18:00:00' && state.hora <= '23:59:59'){
-                
-                    state.saudacao = "https://wa.me/5517981008468?text=Boa%20Noite";
-            }
-        this.setState(state);
-        }
         
+
+        componentDidMount(){
+  
+            if(new Date().toLocaleTimeString() >= '00:00:00' && new Date().toLocaleTimeString() <= '11:59:59'){
+                this.setState({saudacao: "https://wa.me/5517981008468?text=Bom%20Dia"});
+                }
+            else if(new Date().toLocaleTimeString() >= '12:00:00' && new Date().toLocaleTimeString() <= '17:59:59'){
+                this.setState({saudacao: "https://wa.me/5517981008468?text=Boa%20Tarde"});
+                }
+            else if(new Date().toLocaleTimeString() >= '18:00:00' && new Date().toLocaleTimeString() <= '23:59:59'){    
+                this.setState({saudacao: "https://wa.me/5517981008468?text=Boa%20Noite"});
+                }
+           }
         
 
     render(){

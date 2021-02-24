@@ -16,7 +16,7 @@ class habilidadesIdiomas extends Component{
       
         return(
             <Container fluid className="habilidadesInteiro">
-                <BarraDeExperiencia propsLinhaGrossa={this.props.propsClassLinhaGrossa} propsPorcentagem="99%"/>
+                <Container fluid className="item"><p className="itemDescricao">JavaScript: </p><BarraDeExperiencia propsLinhaGrossa={this.props.propsClassLinhaGrossa} propsPorcentagem="99%"/></Container>
                 <BarraDeExperiencia propsLinhaGrossa={this.props.propsClassLinhaGrossa} propsPorcentagem="40%"/>
                 <BarraDeExperiencia propsLinhaGrossa={this.props.propsClassLinhaGrossa} propsPorcentagem="10%"/>
               
