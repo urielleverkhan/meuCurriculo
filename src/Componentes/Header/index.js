@@ -68,7 +68,7 @@ class Header extends Component{
                     <Container fluid className="header">
                         <Link smooth to="#sobreInteiro">Sobre</Link>
                         <Link smooth to="#formacaoExpInteiro">Formação e experiência</Link>
-                        <Link smooth to="#habilidadesIdm">Habilidades e idiomas</Link>
+                        <Link smooth to="#habilidadesInteiro">Habilidades e idiomas</Link>
                         <Link smooth to="#certificadosInt">Certificados e interesses</Link>
                     </Container>
                     <Container fluid className="header480px" onClick={this.abrirHamburger} on >
@@ -81,7 +81,7 @@ class Header extends Component{
                     <Container fluid className={this.state.classAbrirHamburguer}>
                         <Link smooth to="#sobreInteiro">Sobre</Link>
                         <Link smooth to="#formacaoExpInteiro">Formação e experiência</Link>
-                        <Link smooth to="#habilidadesIdm">Habilidades e idiomas</Link>
+                        <Link smooth to="#habilidadesInteiro">Habilidades e idiomas</Link>
                         <Link smooth to="#certificadosInt">Certificados e interesses</Link>
                     </Container>
                     

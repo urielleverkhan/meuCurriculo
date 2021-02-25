@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container'
 import Sobre from '../Sobre';
 import FormacaoExp from '../FormacaoExp';
-import HabilidadesIdiomas from '../habilidadesIdiomas';
+import HabilidadesIdiomas from '../HabilidadesIdiomas';
+import Certificados from '../Certificados';
 import './home.css';
 
 
@@ -67,6 +68,7 @@ class Home extends Component{
                 <Sobre propsClass={this.state.classeMove} />
                 <FormacaoExp propsClassEsquerda={this.state.classeMoveEsquerda} propsClassDireita={this.state.classeMoveDireita} propsAparecer={this.state.classeAparecer} />
                 <HabilidadesIdiomas propsClassLinhaGrossa={this.state.barraExp} />
+                <Certificados />
             </Container>
         ); 
     }

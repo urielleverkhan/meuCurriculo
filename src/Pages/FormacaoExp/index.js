@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import './formacaoExp.css';
 
-class Sobre extends Component{
+class FormacaoEExperiencia extends Component{
  
     render(){
         const classeMoveEsquerda =  this.props.propsClassEsquerda;
@@ -47,4 +47,4 @@ class Sobre extends Component{
         ); 
     }
 }
-export default Sobre;
+export default FormacaoEExperiencia;

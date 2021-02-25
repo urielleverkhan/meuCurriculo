@@ -5,6 +5,7 @@ import Footer from './Componentes/Footer';
 import Home from './Pages/Home';
 import Sobre from './Pages/Sobre';
 import FormacaoExp from './Pages/FormacaoExp';
+import Habilidades from './Pages/HabilidadesIdiomas';
 
 const Routes = () => {
     return(
@@ -14,6 +15,7 @@ const Routes = () => {
             <Route exact path="/" component={Home} />
             <Route exact path="/Sobre" component={Sobre} />
             <Route exact path="/FormacaoEExperiencia" component={FormacaoExp} />
+            <Route exact path="/Habilidades" component={Habilidades} />
         </Switch>
         <Footer />
     </BrowserRouter>
