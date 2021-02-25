@@ -106,7 +106,7 @@ class Header extends Component{
                     <Container fluid className="headerContato">
                         <Container fluid className="contato">
                             <Email href="mailto:nairadanile@gmail.com">nairadanile@gmail.com</Email>
-                            <Email href={this.state.saudacao} target="_blanc">(17) 98100-8468</Email>
+                            <Email href={this.state.saudacao} target="_blanc">(11) 99221-0078</Email>
                             <Container fluid className="midias">
                                 <a href="https://www.linkedin.com/in/naira-danile-magalh%C3%A3es-b3a35a33/" target="_blanc" ><img src={linkedin} /></a>
                                 <a href="https://www.facebook.com/urielleverkhan" target="_blanc" ><img src={facebook} /></a>

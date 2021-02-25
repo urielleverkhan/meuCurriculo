@@ -32,7 +32,7 @@ class Footer extends Component{
                     <Container fluid className="footerEmail">
                         <Container fluid className="email">
                             <Email href="mailto:nairadanile@gmail.com">nairadanile@gmail.com</Email>
-                            <Email href={this.state.saudacao} target="_blanc">(17) 98100-8468</Email>
+                            <Email href={this.state.saudacao} target="_blanc">(11) 99221-0078</Email>
 
                             <button className="baixarCvFooter"><p>Baixar CV</p></button>
                             
