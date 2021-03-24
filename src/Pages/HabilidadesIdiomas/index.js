@@ -16,7 +16,7 @@ class habilidadesIdiomas extends Component{
       
         return(
             <Container fluid className="habilidadesInteiro" id="habilidadesInteiro">
-                    <h1>Habilidades fudido</h1>
+                    <h1>Habilidades</h1>
                     <Container fluid className="itens">
                         <h1>Front-end</h1>
                         <Container fluid className="item"><p className="itemDescricao">HTML: </p><BarraDeExperiencia propsLinhaGrossa={this.props.propsClassLinhaGrossa} propsPorcentagem="95%"/></Container>
